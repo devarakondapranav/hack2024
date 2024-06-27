@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OptiArch - Review Platform</title>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="criticalstyle.css">
+</head>
+<body>
+    <div class="container-fluid">
+        <header class="d-flex justify-content-between align-items-center p-3 bg-primary text-white">
+            <div class="logo h3">OptiArch</div>
+            <div class="profile d-flex align-items-center">
+                <div class="profile-icon">
+                    <img src="profile-icon.png" alt="Profile" class="rounded-circle" width="40" height="40">
+                </div>
+            </div>
+        </header>
+        <div class="row mt-3">
+            <nav class="col-md-3 col-lg-2 d-md-block bg-light sidebar">
+                <div class="sidebar-sticky">
+                    <ul class="nav flex-column">
+                        <li class="nav-item">
+                            <a class="nav-link active" href="#" onclick="showSection('platform')">Platform</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#" onclick="showSection('datastore')">Datastore</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#" onclick="showSection('impacted')">Impacted SEAL</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#" onclick="showSection('review')">Review</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+
+            <main role="main" class="col-md-9 col-lg-10 ml-sm-auto px-4">
+                <div id="platform" class="section">
+                    <h2>Platform</h2>
+                    <div class="form-group">
+                        <label for="platformSelect">Choose Platform</label>
+                        <select class="form-control" id="platformSelect">
+                            <option>AWS</option>
+                            <option>Azure</option>
+                            <option>GCP</option>
+                            <option>Internal Cloud</option>
+                        </select>
+                    </div>
+                    <h3>Comments</h3>
+                    <div class="comments" id="comments">
+                        <div class="comment mb-2 p-2 border">
+                            <p><strong>Rajesh</strong> <small class="text-muted">10:15 AM</small></p>
+                            <p>Choosing AWS because...</p>
+                        </div>
+                        <div class="comment mb-2 p-2 border">
+                            <p><strong>Keer</strong> <small class="text-muted">12:30 PM</small></p>
+                            <p>Approved this design</p>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="newComment">Add new comment</label>
+                        <input type="text" class="form-control" id="newComment" placeholder="Enter your comment">
+                    </div>
+                    <button class="btn btn-primary mt-2" onclick="addComment()">Save</button>
+                    <div class="d-flex justify-content-between mt-4">
+                        <div>
+                            <button class="btn btn-success">Approve</button>
+                            <button class="btn btn-danger">Reject</button>
+                        </div>
+                        <div>
+                            <small class="text-muted">Last updated: 2d ago</small>
+                        </div>
+                    </div>
+                </div>
+                <!-- Additional sections for 'datastore', 'impacted', and 'review' can be added here -->
+            </main>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="criticalscript.js"></script>
+</body>
+</html>

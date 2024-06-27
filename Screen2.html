@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OptiArch - Create Project</title>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles2.css">
+</head>
+<body>
+    <div class="container-fluid">
+        <header class="d-flex justify-content-between align-items-center p-3 bg-primary text-white">
+            <div class="logo h3">OptiArch</div>
+            <div class="profile d-flex align-items-center">
+                <div class="profile-icon">
+                    <img src="profile-icon.png" alt="Profile" class="rounded-circle" width="40" height="40">
+                </div>
+            </div>
+        </header>
+        <main class="mt-5">
+            <div class="container">
+                <h1 class="mb-4">Create New Project</h1>
+                <!-- //<form> -->
+                    <div class="form-group row">
+                        <label for="sealId" class="col-sm-2 col-form-label">SEAL ID</label>
+                        <div class="col-sm-10">
+                            <input type="text" class="form-control" id="sealId" placeholder="Enter SEAL ID">
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label for="projectName" class="col-sm-2 col-form-label">Project Name</label>
+                        <div class="col-sm-10">
+                            <input type="text" class="form-control" id="projectName" placeholder="Enter Project Name">
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label for="impactedSeal" class="col-sm-2 col-form-label">Impacted SEAL</label>
+                        <div class="col-sm-10">
+                            <input type="text" class="form-control" id="impactedSeal" placeholder="Enter Impacted SEAL">
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label for="description" class="col-sm-2 col-form-label">Description</label>
+                        <div class="col-sm-10">
+                            <textarea class="form-control" id="description" rows="4" placeholder="Enter Description"></textarea>
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <div class="col-sm-10 offset-sm-2">
+                            <a href="criticalPage.html" ><button type="submit" class="btn btn-success">Create</button></a>
+                            
+                        </div>
+                    </div>
+                <!-- </form> -->
+            </div>
+        </main>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="script2.js"></script>
+</body>
+</html>

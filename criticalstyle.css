@@ -1,0 +1,48 @@
+body {
+    background-color: #f0f0f0;
+}
+
+.header {
+    background-color: #007bff;
+    color: #fff;
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.profile-icon img {
+    border: 2px solid #fff;
+}
+
+.sidebar-sticky {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    height: calc(100vh - 56px);
+    padding-top: 20px;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+.nav-link.active {
+    font-weight: bold;
+}
+
+.section {
+    display: none;
+}
+
+.section.active {
+    display: block;
+}
+
+.comments {
+    margin-top: 20px;
+}
+
+.comment {
+    background-color: #f8f9fa;
+    border-radius: 5px;
+}
